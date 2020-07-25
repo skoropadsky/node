@@ -1,0 +1,17 @@
+<h1><%= title %></h1>
+
+<form method="POST" action="users/add">
+	<label>Name: </label>
+	<input type="text" name="name" />
+	<label>Age: </label>
+	<input type="text" name="age" />
+	<button>Submit</button>
+<form>
+
+<ul>
+<% users.forEach(function(user){ %>
+	
+	<li><%= user.name %> <%= user.age %></li>
+
+<% }) %>
+</ul>
